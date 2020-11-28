@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cold Drink Advisor</string>
+    <string name="find_cold_drink">Select Cold Drink</string>
+    <string name="brands"></string>
+    <string-array name="cold_drinks">
+        <item>Coca Cola</item>
+        <item>Fanta</item>
+        <item>Sprite</item>
+        <item>Pepsi</item>
+    </string-array>
+</resources>

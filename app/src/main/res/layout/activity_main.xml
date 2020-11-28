@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/drinkImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/drink" />
+
+    <Spinner
+        android:id="@+id/drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/drinkImage"
+        android:layout_marginTop="20dp"
+        android:entries="@array/cold_drinks" />
+
+    <Button
+        android:id="@+id/find_cold_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/drink"
+        android:layout_below="@+id/drink"
+        android:layout_marginTop="5dp"
+        android:text="@string/find_cold_drink"
+        android:layout_alignStart="@+id/drink"
+        android:onClick="onClickDisplayColdDrink" />
+
+    <TextView
+        android:id="@+id/brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/find_cold_drink"
+        android:layout_below="@+id/find_cold_drink"
+        android:layout_marginTop="20dp"
+        android:text="@string/brands"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignStart="@+id/find_cold_drink" />
+
+</RelativeLayout>
