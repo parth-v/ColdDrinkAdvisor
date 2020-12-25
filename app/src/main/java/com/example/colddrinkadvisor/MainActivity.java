@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,9 +17,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickDisplayColdDrink(View view){
-        TextView brands = (TextView) findViewById(R.id.brands);
         Spinner color = (Spinner) findViewById(R.id.drink);
         String coldDrink = String.valueOf(color.getSelectedItem());
-        brands.setText(String.format("You have selected:\n%s", coldDrink));
+        Toast.makeText(this, coldDrink, Toast.LENGTH_LONG).show();
     }
 }
