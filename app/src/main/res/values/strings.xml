@@ -2,6 +2,7 @@
     <string name="app_name">Cold Drink Advisor</string>
     <string name="find_cold_drink">Select Cold Drink</string>
     <string name="brands"></string>
+    <string name="select_drink_text">Please select your favourite cold drink!</string>
     <string-array name="cold_drinks">
         <item>Coca Cola</item>
         <item>Fanta</item>
